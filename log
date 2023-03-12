@@ -16,3 +16,9 @@ Sun 12 Mar 2023 12:37:02 AM UTC:
  tests:  1|6
 total_score: 10/70
 c1e53b8
+Sun 12 Mar 2023 12:53:43 AM UTC: 
+ exercises.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+d66cdc7

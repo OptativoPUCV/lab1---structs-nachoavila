@@ -42,3 +42,14 @@ exercises.c:86:6: error: suggest parentheses around assignment used as truth val
 cc1: all warnings being treated as errors
 Compilation failed
 7b2170d
+Thu 16 Mar 2023 03:51:44 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:6: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   86 |   if(vectortmp = NULL) return NULL;
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c87e11f

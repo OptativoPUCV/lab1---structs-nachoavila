@@ -70,3 +70,23 @@ Thu 16 Mar 2023 03:54:28 PM UTC:
  tests:  4|3
 total_score: 40/70
 6e8f113
+Thu 16 Mar 2023 03:58:56 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:99:3: error: variable-sized object may not be initialized
+   99 |   Vector *v[i] = valor;
+      |   ^~~~~~
+exercises.c:99:11: error: ‘v’ redeclared as different kind of symbol
+   99 |   Vector *v[i] = valor;
+      |           ^
+exercises.c:98:28: note: previous definition of ‘v’ was here
+   98 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:99:11: error: unused variable ‘v’ [-Werror=unused-variable]
+   99 |   Vector *v[i] = valor;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+926ce25

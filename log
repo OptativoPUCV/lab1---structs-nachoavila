@@ -28,3 +28,17 @@ Sun 12 Mar 2023 02:10:35 AM UTC:
  tests:  3|4
 total_score: 30/70
 8d5106a
+Thu 16 Mar 2023 03:51:25 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:22: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   85 |   vectortmp -> datos = (Vector *) malloc(n * sizeof(Vector));
+      |                      ^
+exercises.c:86:6: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   86 |   if(vectortmp = NULL) return NULL;
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7b2170d

@@ -53,3 +53,14 @@ exercises.c:86:6: error: suggest parentheses around assignment used as truth val
 cc1: all warnings being treated as errors
 Compilation failed
 c87e11f
+Thu 16 Mar 2023 03:52:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/time.h:29,
+                 from test.c:4:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:19: error: incompatible types when assigning to type ‘Vector’ from type ‘void *’
+   86 |   if(*vectortmp = NULL) return NULL;
+      |                   ^~~~
+Compilation failed
+c7b8414
